@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Banner1 from './Banner1'
 
 function First() {
   return (
-    <div className='mx-auto max-w-[1400px] h-[100vh] bg-[linear-gradient(30deg,_rgba(15,7,21,1)_0%,_rgba(118,78,166,1)_52%,_rgba(39,22,67,1)_100%)]'>
+    <div className='mx-auto max-w-[1400px]  bg-[linear-gradient(60deg,_rgba(33,3,55,1)_0%,_rgba(85,11,86,1)_52%,_rgba(42,10,96,1)_100%)] h-full'>
         <Navbar/>
+        <Banner1/>
     </div>
   )
 }

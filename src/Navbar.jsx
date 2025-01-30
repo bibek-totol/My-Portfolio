@@ -3,7 +3,7 @@ import ima1 from './assets/logo.webp'
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-[#25153F] shadow-sm">
+    <div className="navbar  bg-[linear-gradient(60deg,_rgba(33,3,55,1)_0%,_rgba(85,11,86,1)_52%,_rgba(42,10,96,1)_100%)] shadow-sm">
     <div className="navbar-start">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
