@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function QualityServices() {
   return (
-    <div className='h-full p-4'>
+    <div className='h-full p-4 mt-36'>
       <div className='text-center'>
       <p className='text-4xl lg:text-6xl font-bold text-[#8953F7] mt-5'>
           My Quality <span className='text-[#B694FA]'>Services</span>
         </p>
-        <p className='text-[#B694FA] font-bold mt-5'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+        <p className='text-[#B694FA] max-w-xl mx-auto font-bold mt-5'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
 
 
         <div className="collapse collapse-plus  border border-base-300 text-blue-400 w-2/3 mx-auto mt-14 ">
