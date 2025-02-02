@@ -40,11 +40,15 @@ export default function Banner1() {
           I break down complex user experience problems to create integrity-focused solutions that connect billions of people.
         </p>
 
+
+
+        <p className='pookie2 mt-10   text-cyan-400'>Please Click on these buttons</p>
+
         <div className='flex gap-3'>
+       
           <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'>Download CV <MdOutlineFileDownload /></button>
-          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><FaFacebookF /></button>
-          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><FaLinkedinIn /></button>
-          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><FaGithub /></button>
+          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://www.linkedin.com/in/bibek-bhowmick-1a0646206/'><FaLinkedinIn /></a></button>
+          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://github.com/bibekbowmick2-2?tab=repositories'><FaGithub /></a></button>
         </div>
         </motion.div>
 
