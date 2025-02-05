@@ -13,7 +13,7 @@ export default function Experience() {
         <p className='text-2xl lg:text-3xl font-bold text-[#9065E5]'>2022-23</p>
         <p className='text-3xl lg:text-4xl font-bold text-[#CCBAEF]'>Problem Solving</p>
         <p className='text-1xl  font-bold text-[#CCBAEF]  '>Leetcode,Codeforces,HackerRank,GeeksForGeeks,
-        <br/>Coding Ninjas(200+)problems</p>
+        <br/>Coding Ninjas,PortSwigger Academy(250+)problems</p>
 
         </div>
 
@@ -60,7 +60,7 @@ export default function Experience() {
         <div className='bg-[#301649] hover:bg-[#834EF0] transition duration-300 rounded-r-full flex flex-col gap-y-3 p-5 mt-12 '>
         <p className='text-2xl lg:text-3xl font-bold text-[#9065E5]'>2022-24</p>
         <p className='text-3xl lg:text-4xl font-bold text-[#CCBAEF]'>Participation in Programming Contest</p>
-        <p className='text-1xl  font-bold text-[#CCBAEF]  '>BAUET(Mindstrom(1.0,2.0))</p>
+        <p className='text-1xl  font-bold text-[#CCBAEF]  '>BAUET(Mindstrom(1.0,2.0)) and IT Spark(1.0)</p>
 
         </div>
 

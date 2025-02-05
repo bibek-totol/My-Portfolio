@@ -4,6 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import im2 from './assets/Screenshot_4-Photoroom.png'
 import './App.css'
 import { motion } from 'framer-motion';
+import BibekCV from './assets/Bibek CV(2).pdf';
 
 export default function Banner1() {
 
@@ -46,9 +47,13 @@ export default function Banner1() {
 
         <div className='flex gap-3'>
        
-          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'>Download CV <MdOutlineFileDownload /></button>
+        <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'>
+      <a href={BibekCV} download="Bibek_CV.pdf">
+        <span>Download CV<MdOutlineFileDownload /></span> 
+      </a>
+    </button>
           <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://www.linkedin.com/in/bibek-bhowmick-1a0646206/'><FaLinkedinIn /></a></button>
-          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://github.com/bibekbowmick2-2?tab=repositories'><FaGithub /></a></button>
+          <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://github.com/bibekbowmick2-2'><FaGithub /></a></button>
         </div>
         </motion.div>
 

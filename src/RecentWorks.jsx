@@ -1,6 +1,9 @@
 import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import im1 from './assets/Screenshot_58.png'
+import im2 from './assets/Screenshot_14.png'
+import im3 from './assets/Screenshot_75.png'
 export default function RecentWorks() {
   return (
     <div className='mt-32'>
@@ -13,31 +16,83 @@ export default function RecentWorks() {
 
         <Tabs>
       <TabList className={'flex justify-center gap-5 [font-size:12px] lg:[font-size:20px] w-8/9 lg:w-1/2 mx-auto mt-14 border text-amber-50 font-bold bg-black p-3 rounded-full'}>
-        <Tab>Front End Projects</Tab>
+        <Tab>Mern Stack Projects</Tab>
         
-        <Tab>Backend Projects</Tab>
-        <Tab>All Projects</Tab>
+        {/* <Tab>Backend Projects</Tab>
+        <Tab>All Projects</Tab> */}
         
       </TabList>
 
       <TabPanel>
-        <p>
-          <b>Mario</b> (<i>Japanese: マリオ Hepburn: Mario</i>) is a fictional character
-          in the Mario franchise, owned by Nintendo. Created by Shigeru Miyamoto, Mario
-          is a short, Italian plumber who resides in the Mushroom Kingdom, often rescuing
-          Princess Peach from Bowser. His younger brother and sidekick is Luigi.
-        </p>
-        <p>
-          Source:{" "}
-          <a href="https://en.wikipedia.org/wiki/Mario" target="_blank" rel="noopener noreferrer">
-            Wikipedia
-          </a>
-        </p>
+       <div className='grid grid-cols-1 lg:grid-cols-3 justify-center p-10 lg:p-25 gap-20'>
+
+
+
+       <div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
+  <figure>
+    <img
+      src={im1}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+    <a className='text-blue-800 font-extrabold underline' href="https://bibek-iems-portal.netlify.app/"><h2 className="card-title">Live Link</h2></a>
+    <p className='text-fuchsia-300 font-bold '>
+    IEMS: Collaborative Study Platform connects students, tutors, and administrators to streamline study session scheduling, resource sharing, and user management.  This platform enhances collaboration and improves access to study materials for a more effective educational experience.
+    </p>
+    <div className="card-actions justify-end">
+
+     <a href="https://github.com/bibekbowmick2-2/IEMS-Client-" ><button className="btn btn-primary">Client Repository</button></a> 
+     <a  href="https://github.com/bibekbowmick2-2/IEMS-Server"><button className="btn btn-primary">Server Repository</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
+  <figure>
+    <img
+      src={im2}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+  <a className='text-blue-800 font-extrabold underline' href="https://unruly-destruction.surge.sh/"><h2 className="card-title">Live Link</h2></a>
+    <p className='text-fuchsia-300 font-bold '>GameCritics-Hub2 is a game review application that provides a comprehensive database of games, user-generated reviews and ratings, and personalized recommendations.  It also offers advanced search and filter options along with up-to-date gaming news and updates.</p>
+    <div className="card-actions justify-end">
+     
+    <a href="https://github.com/bibekbowmick2-2/GameCritic-Hub-Client-" ><button className="btn btn-primary">Client Repository</button></a> 
+     <a  href="https://github.com/bibekbowmick2-2/GameCriticHub-server-"><button className="btn btn-primary">Server Repository</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
+  <figure>
+    <img
+      src={im3}
+      alt="Shoes" />
+  </figure>
+  <div className="card-body">
+  <a className='text-blue-800 font-extrabold underline' href="https://tech-tales2025.netlify.app/"><h2 className="card-title">Live Link</h2></a>
+    <p className='text-fuchsia-300 font-bold '>Tech-Tales is a blog application that allows users to create, view, and manage blog posts, along with engaging with other users through comments.  It also incorporates features like  a calendar, and a wishlist to enhance the blogging experience.</p>
+    <div className="card-actions justify-end">
+     
+    <a href="https://github.com/bibekbowmick2-2/Client-Tech-Tales" ><button className="btn btn-primary">Client Repository</button></a> 
+     <a  href="https://github.com/bibekbowmick2-2/Server-Tech-Tales-"><button className="btn btn-primary">Server Repository</button></a>
+    </div>
+  </div>
+</div>
+       </div>
       </TabPanel>
 
       
 
-      <TabPanel>
+      {/* <TabPanel>
         <p>
           <b>Princess Peach</b> (<i>Japanese: ピーチ姫 Hepburn: Pīchi-hime</i>) is the
           princess of the Mushroom Kingdom and a recurring damsel-in-distress in the Mario series.
@@ -62,7 +117,7 @@ export default function RecentWorks() {
             Wikipedia
           </a>
         </p>
-      </TabPanel>
+      </TabPanel> */}
 
       
     </Tabs>
