@@ -4,6 +4,9 @@ import 'react-tabs/style/react-tabs.css';
 import im1 from './assets/Screenshot_58.png'
 import im2 from './assets/Screenshot_14.png'
 import im3 from './assets/Screenshot_75.png'
+import './App.css'
+import Zoom from 'react-reveal/Zoom';
+import { Link } from "react-router";
 export default function RecentWorks() {
   return (
     <div className='mt-32'>
@@ -23,15 +26,18 @@ export default function RecentWorks() {
         
       </TabList>
 
-      <TabPanel>
-       <div className='grid grid-cols-1 lg:grid-cols-3 justify-center p-10 lg:p-25 gap-20'>
+      <TabPanel className={'mx-auto'}>
+       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  p-5   gap-y-5'>
 
 
 
-       <div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
-  <figure>
+<Zoom>
+
+       <div className="card  card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-[350px]  lg:w-[480px] shadow-xl p-8 ">
+  <figure >
     <img
       src={im1}
+      className='w-full h-60 md:h-50 lg:h-80'
       alt="Shoes" />
   </figure>
   <div className="card-body">
@@ -40,20 +46,23 @@ export default function RecentWorks() {
     IEMS: Collaborative Study Platform connects students, tutors, and administrators to streamline study session scheduling, resource sharing, and user management.  This platform enhances collaboration and improves access to study materials for a more effective educational experience.
     </p>
     <div className="card-actions justify-end">
-
-     <a href="https://github.com/bibekbowmick2-2/IEMS-Client-" ><button className="btn btn-primary">Client Repository</button></a> 
-     <a  href="https://github.com/bibekbowmick2-2/IEMS-Server"><button className="btn btn-primary">Server Repository</button></a>
+    
+    <Link to="/details1"><button className="btn btn-primary">View Details</button></Link>
+    
     </div>
   </div>
 </div>
+</Zoom>
 
 
 
+<Zoom>
 
-<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
+<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-[350px] lg:w-[480px] shadow-xl p-8">
   <figure>
     <img
       src={im2}
+      className='w-full  h-60 md:h-50 lg:h-80'
       alt="Shoes" />
   </figure>
   <div className="card-body">
@@ -61,32 +70,35 @@ export default function RecentWorks() {
     <p className='text-fuchsia-300 font-bold '>GameCritics-Hub2 is a game review application that provides a comprehensive database of games, user-generated reviews and ratings, and personalized recommendations.  It also offers advanced search and filter options along with up-to-date gaming news and updates.</p>
     <div className="card-actions justify-end">
      
-    <a href="https://github.com/bibekbowmick2-2/GameCritic-Hub-Client-" ><button className="btn btn-primary">Client Repository</button></a> 
-     <a  href="https://github.com/bibekbowmick2-2/GameCriticHub-server-"><button className="btn btn-primary">Server Repository</button></a>
+    <Link to="/details2"><button className="btn btn-primary">View Details</button></Link>
+      
     </div>
   </div>
 </div>
 
+</Zoom>
 
 
 
+<Zoom>
 
-<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-96 shadow-xl">
+<div className="card card-compact  bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] w-[350px]  lg:w-[480px] shadow-xl p-8">
   <figure>
     <img
       src={im3}
+      className='w-full  h-60 md:h-50 lg:h-80'
       alt="Shoes" />
   </figure>
   <div className="card-body">
   <a className='text-blue-800 font-extrabold underline' href="https://tech-tales2025.netlify.app/"><h2 className="card-title">Live Link</h2></a>
     <p className='text-fuchsia-300 font-bold '>Tech-Tales is a blog application that allows users to create, view, and manage blog posts, along with engaging with other users through comments.  It also incorporates features like  a calendar, and a wishlist to enhance the blogging experience.</p>
     <div className="card-actions justify-end">
-     
-    <a href="https://github.com/bibekbowmick2-2/Client-Tech-Tales" ><button className="btn btn-primary">Client Repository</button></a> 
-     <a  href="https://github.com/bibekbowmick2-2/Server-Tech-Tales-"><button className="btn btn-primary">Server Repository</button></a>
+   
+     <Link to="/details3"><button className="btn btn-primary">View Details</button></Link>
     </div>
   </div>
 </div>
+</Zoom>
        </div>
       </TabPanel>
 

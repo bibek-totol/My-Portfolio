@@ -1,13 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Navbar from './Navbar';
-import Banner1 from './Banner1';
-import QualityServices from './QualityServices';
-import RecentWorks from './RecentWorks';
-import Experience from './Experience';
-import SKills from './SKills';
-import ContactUs from './ContactUs';
-import Footer from './Footer';
+import React from "react";
+import { motion } from "framer-motion";
+import Navbar from "./Navbar";
+import Banner1 from "./Banner1";
+import QualityServices from "./QualityServices";
+import RecentWorks from "./RecentWorks";
+import Experience from "./Experience";
+import SKills from "./SKills";
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
+import ProfileDetails from "./ProfileDetails1";
 
 function First() {
   const fadeInFromRight = {
@@ -16,14 +17,14 @@ function First() {
   };
 
   return (
-    <div className='mx-auto max-w-[1400px] bg-[linear-gradient(60deg,_rgba(33,3,55,1)_0%,_rgba(85,11,86,1)_52%,_rgba(42,10,96,1)_100%)] h-full'>
+    <div className="mx-auto max-w-[1440px] bg-[linear-gradient(60deg,_rgba(33,3,55,1)_0%,_rgba(85,11,86,1)_52%,_rgba(42,10,96,1)_100%)] h-full">
       <Navbar />
       <Banner1 />
 
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.1 }} 
+        viewport={{ once: false, amount: 0.1 }}
         variants={fadeInFromRight}
       >
         <QualityServices />
@@ -48,8 +49,9 @@ function First() {
       </motion.div>
 
       <SKills />
-      <ContactUs/>
-      <Footer/>
+      <ContactUs />
+
+      <Footer />
     </div>
   );
 }

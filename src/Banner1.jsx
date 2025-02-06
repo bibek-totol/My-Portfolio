@@ -47,9 +47,9 @@ export default function Banner1() {
 
         <div className='flex gap-3'>
        
-        <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'>
+        <button className='btn btn-outline text-[#8953F7] rounded-full p-6 mt-5'>
       <a href={BibekCV} download="Bibek_CV.pdf">
-        <span>Download CV<MdOutlineFileDownload /></span> 
+        <span className='mx-auto'><MdOutlineFileDownload />Download CV</span> <span></span>
       </a>
     </button>
           <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://www.linkedin.com/in/bibek-bhowmick-1a0646206/'><FaLinkedinIn /></a></button>
