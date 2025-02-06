@@ -16,6 +16,7 @@
 
   body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .pookie3{
@@ -27,6 +28,7 @@ backdrop-filter: blur(2.2px);
 -webkit-backdrop-filter: blur(2.2px);
 border: 1px solid rgba(128, 5, 107, 0.81);
   }
+
 
   
   

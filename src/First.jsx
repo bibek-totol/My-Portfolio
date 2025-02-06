@@ -26,6 +26,8 @@ function First() {
         whileInView="visible"
         viewport={{ once: false, amount: 0.1 }}
         variants={fadeInFromRight}
+        id="services"
+      
       >
         <QualityServices />
       </motion.div>
@@ -35,6 +37,7 @@ function First() {
         whileInView="visible"
         viewport={{ once: false, amount: 0.1 }}
         variants={fadeInFromRight}
+        id="works"
       >
         <RecentWorks />
       </motion.div>
@@ -44,12 +47,18 @@ function First() {
         whileInView="visible"
         viewport={{ once: false, amount: 0.1 }}
         variants={fadeInFromRight}
+        id="education"
       >
         <Experience />
       </motion.div>
 
+
+     <div id="skills">
       <SKills />
+      </div>
+      <div id="contact">
       <ContactUs />
+      </div>
 
       <Footer />
     </div>
