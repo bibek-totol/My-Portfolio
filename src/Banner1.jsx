@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import im2 from './assets/Screenshot_4-Photoroom.png'
 import './App.css'
 import { motion } from 'framer-motion';
-import BibekCV from './assets/Bibek CV(2.0).pdf';
+import BibekCV from './assets/Bibek CV(3.0).pdf';
 
 export default function Banner1() {
 
@@ -47,11 +47,13 @@ export default function Banner1() {
 
         <div className='flex gap-3'>
        
-        <button className='btn btn-outline text-[#8953F7] rounded-full p-6 mt-5'>
-      <a href={BibekCV} download="Bibek_CV.pdf">
-        <span className='mx-auto'><MdOutlineFileDownload />Download CV</span> <span></span>
-      </a>
-    </button>
+        <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 hover:from-purple-600 hover:to-yellow-600 text-white font-semibold px-6 py-3 mt-6 rounded-full shadow-lg transition-all duration-300 ease-in-out">
+  <a href={BibekCV} download="Bibek CV(3.0).pdf" className="flex items-center gap-2">
+    <MdOutlineFileDownload className="text-xl" />
+    Download CV
+  </a>
+</button>
+
           <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://www.linkedin.com/in/bibek-bhowmick-1a0646206/'><FaLinkedinIn /></a></button>
           <button className='btn btn-outline text-[#8953F7] rounded-full p-4 mt-5'><a href='https://github.com/bibekbowmick2-2'><FaGithub /></a></button>
         </div>
