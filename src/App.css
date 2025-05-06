@@ -44,6 +44,19 @@ border: 1px solid rgba(128, 5, 107, 0.81);
     box-sizing: border-box;
   }
 
+  .spin-animation {
+    animation: custom-spin 1s linear infinite;
+  }
+
+  @keyframes custom-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 
   
   
