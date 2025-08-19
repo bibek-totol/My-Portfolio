@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function QualityServices() {
   return (
-    <div className='h-full p-4 mt-14'>
+    <div className='h-full p-4 mt-14 '>
+
+   
+
       <div className='text-center'>
         <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#8953F7] mt-5'>
           My Quality <span className='text-[#B694FA]'>Services</span>

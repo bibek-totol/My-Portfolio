@@ -63,32 +63,32 @@ const ContactUs = () => {
       </div>
       <div className=" flex justify-center items-center text-white px-6 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 rounded-lg max-w-6xl w-full">
-          {/* Left Side - Form */}
-          <div className="bg-[#0b071c] p-14 rounded-lg">
+          
+          <div className="bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-14 rounded-lg">
             <h2 className="text-4xl font-bold text-purple-400">Let’s work together!</h2>
             <p className="text-gray-400 mt-2">
               I design and code beautifully simple things, and I love what I do.
             </p>
 
-            <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First name" required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
-                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last name" required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+            <form className="mt-6 space-y-4 " onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+                <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="First name" required className="w-full p-3 bg-black/50   border border-gray-700 rounded-md  focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Last name" required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email address" required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone number" required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email address" required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone number" required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500" />
               </div>
 
-              <select name="service" value={formData.service} onChange={handleChange} required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+              <select name="service" value={formData.service} onChange={handleChange} required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
                 <option value="">Select an option</option>
                 <option value="Front End Development">Front End Development</option>
                 <option value="Back End Development">Back End Development</option>
                 <option value="Full Stack Development">Full Stack Development</option>
               </select>
 
-              <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required className="w-full p-3 bg-black border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500 h-32"></textarea>
+              <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500 h-32"></textarea>
 
               <button type="submit" className="bg-gradient-to-r from-purple-500 to-purple-700 text-white py-3 px-6 rounded-lg font-bold hover:opacity-80 transition duration-300 w-full">
                 Send Message
