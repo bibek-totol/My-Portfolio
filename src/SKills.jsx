@@ -21,7 +21,7 @@ const skills = [
 
 export default function SKills() {
   return (
-    <div className='p-10 mt-14'>
+    <div className='p-10 mt-10'>
       <section className="text-center mt-20 px-5">
       <h2 className="text-4xl lg:text-6xl font-bold text-white">
         My <span className="text-purple-400">Skills</span>
@@ -37,7 +37,7 @@ export default function SKills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-[#553390] hover:bg-[#3e717d] transition duration-300 p-8 rounded-2xl flex flex-col items-center text-white"
+            className="bg-transparent border-2 hover:bg-[#3e717d] transition duration-300 p-8 rounded-2xl flex flex-col items-center text-white"
           >
             <img src={skill.image} alt={skill.name} className="w-14 h-14 mb-3" />
             <p className="text-xl font-bold">{skill.percentage}</p>

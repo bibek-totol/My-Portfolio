@@ -1,14 +1,14 @@
 import React from 'react'
-import footerim from './assets/1.jpg'
+
 
 export default function Footer() {
   return (
     <div className='relative font-bold'>
-      <img src={footerim} className='w-full h-[300px] object-cover absolute z-10 top-0 left-0' alt="" /> 
+      
      
 
      
-      <footer className="footer footer-center  bg-[linear-gradient(60deg,_rgba(33,3,55,1)_0%,_rgba(85,11,86,1)_52%,_rgba(42,10,96,1)_100%)] text-[#FFFFFF] rounded p-10 flex flex-col ">
+      <footer className="footer footer-center   text-[#FFFFFF] rounded p-10 flex flex-col ">
       
   <nav className="grid grid-flow-col gap-4  z-50">
     <a className="link link-hover">About us</a>

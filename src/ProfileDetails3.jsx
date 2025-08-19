@@ -2,23 +2,13 @@ import React,{Suspense} from "react";
 import im1 from './assets/Screenshot_75.webp'
 import './App.css'
 import { Link } from "react-router";
-import video1 from './assets/1.mp4';
+
 
 const ProfileDetails3 = () => {
   return (
     <div className="relative font-extrabold  text-white min-h-screen p-6 ">
-    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-[#00000074] z-1 top-0 left-0 ">
-    <video 
-    className='w-full h-[1500px] md:h-[800px] lg:h-[1000px] object-cover absolute z-0 top-0 left-0'
-    autoPlay
-    loop
-    muted
-  playsInline
-  preload="metadata"
-    src= {video1}
-    type="video/mp4"
+    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-b from-[#3c005f] to-[#2a0045] z-1 top-0 left-0 ">
     
-    />
     </div>
 
 
@@ -52,7 +42,7 @@ const ProfileDetails3 = () => {
       </div>
 
       {/* CTA Buttons */}
-      <div className="mt-6 grid grid-cols-2 md:grid-cols-3 p-2 gap-4">
+      <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-2 gap-4">
         <a href="https://tech-tales2025.netlify.app/" className="bg-blue-600 px-6 py-2 rounded-lg mr-4">Live Demo</a>
         <a href="https://github.com/bibek-totol/More-Beautiful-Client-Tech-Tales" className="bg-purple-600 px-6 py-2 rounded-lg">GitHub(Client)</a>
         <a href="https://github.com/bibek-totol/Server-Tech-Tales-" className="bg-purple-600 px-6 py-2 rounded-lg">GitHub(Server)</a>
@@ -78,7 +68,7 @@ const ProfileDetails3 = () => {
       {/* Key Features */}
       <div className="mt-8">
       <Suspense fallback={<div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>}>
-              <img className="rounded-lg w-full" src={im1} alt="Project Screenshot" loading="lazy" />
+              <img className="rounded-lg w-full" src={im1} alt="Project Screenshot"  />
             </Suspense>
         <h3 className="text-lg mt-4">Key Features</h3>
         <ul className="mt-2 space-y-2">

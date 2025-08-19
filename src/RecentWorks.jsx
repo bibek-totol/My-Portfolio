@@ -31,7 +31,7 @@ const ProjectCard = ({ img, link, desc, to }) => (
         <p className="text-white/80 text-sm sm:text-base">{desc}</p>
         <div className="flex justify-end">
           <Link to={to}>
-            <button className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#9463F8] to-[#7d4edc] text-white text-sm sm:text-base hover:brightness-110 transition">
+            <button className="px-4 border-3 border-cyan-400 py-2 rounded-xl bg-gradient-to-r from-[#9463F8] to-[#7d4edc] text-black font-extrabold text-sm sm:text-base hover:brightness-110 transition">
               View Details
             </button>
           </Link>
@@ -79,7 +79,7 @@ export default function RecentWorks() {
 
   
   return (
-    <section className="mt-16 rounded-4xl bg-gradient-to-b from-[#3c005f] to-[#2a0045] py-20 px-6 sm:px-10 lg:px-24">
+    <section className="mt-16 rounded-4xl  bg-gradient-to-r from-[#004e92] to-[#000428] py-20 px-6 sm:px-10 lg:px-24">
 
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#B694FA]">

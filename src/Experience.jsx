@@ -42,7 +42,7 @@ export default function Experience() {
 
   const educationData = [
     {
-      year: "2020–24",
+      year: "2021–25",
       title: "All Online Learning Certificates",
       link: {
         text: "Certificates GitHub Repository Link",
@@ -51,7 +51,7 @@ export default function Experience() {
       },
     },
     {
-      year: "2020–24",
+      year: "2021–25",
       title:
         "Bachelor of Science in Computer Science and Engineering",
       desc:
