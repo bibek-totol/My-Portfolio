@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const ProfileDetails3 = () => {
   return (
     <div className="relative font-extrabold  text-white min-h-screen p-6 ">
-    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
+    <div className="absolute w-full h-[2100px] md:h-[800px] lg:h-[1000px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
     
     </div>
 
@@ -15,13 +15,13 @@ const ProfileDetails3 = () => {
 
     <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4  gap-4">
     <div>
-      {/* Header */}
+      
       <div className="flex items-center space-x-4">
         <Link to="/"><button className="bg-gray-800 px-4 py-2 rounded-lg">🔙 Back</button></Link>
         <span className="text-gray-400">Projects &gt;  Tech-Tales: A Blog Application </span>
       </div>
 
-      {/* Hero Section */}
+      
       <div className="mt-8">
         <h1 className="text-4xl font-bold text-white">
         Tech-Tales: <span className="text-purple-400">A Blog Application </span>
@@ -29,7 +29,7 @@ const ProfileDetails3 = () => {
         
       </div>
 
-      {/* Stats Section */}
+      
       <div className="flex space-x-4 mt-6">
         <div className="pookie3 p-4 rounded-lg text-center">
           <p className="text-2xl font-bold">7</p>
@@ -41,14 +41,14 @@ const ProfileDetails3 = () => {
         </div>
       </div>
 
-      {/* CTA Buttons */}
+      
       <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-2 gap-4">
         <a href="https://tech-tales2025.netlify.app/" className="bg-blue-600 px-6 py-2 rounded-lg mr-4">Live Demo</a>
         <a href="https://github.com/bibek-totol/More-Beautiful-Client-Tech-Tales" className="bg-purple-600 px-6 py-2 rounded-lg">GitHub(Client)</a>
         <a href="https://github.com/bibek-totol/Server-Tech-Tales-" className="bg-purple-600 px-6 py-2 rounded-lg">GitHub(Server)</a>
       </div>
 
-      {/* Technologies Used */}
+      
       <div className="mt-8">
         <h3 className="text-lg font-semibold">Technologies Used</h3>
         <div className="flex flex-wrap gap-2 mt-2">
@@ -65,13 +65,13 @@ const ProfileDetails3 = () => {
 
       <div>
 
-      {/* Key Features */}
+    
       <div className="mt-8">
       <Suspense fallback={<div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>}>
               <img className="rounded-lg w-full" src={im1} alt="Project Screenshot"  />
             </Suspense>
         <h3 className="text-lg mt-4">Key Features</h3>
-        <ul className="mt-2 space-y-2">
+        <ul className="mt-2 space-y-2 ">
 
        
 
