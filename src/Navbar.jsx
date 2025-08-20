@@ -4,7 +4,7 @@ import footerim from './assets/1.jpg'
 
 export default function Navbar() {
   return (
-    <div className=" relative navbar  bg-transparent shadow-lg shadow-blue-950">
+    <div className=" relative navbar px-4  bg-transparent shadow-lg shadow-blue-950">
     
     <div className="navbar-start z-30">
       <div className="dropdown ">
@@ -44,7 +44,7 @@ export default function Navbar() {
       </ul>
     </div>
     <div className="navbar-end z-30">
-      <button className='border-2 border-cyan-400 btn bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] hover:bg-[linear-gradient(-30deg,_rgba(30,5,36,1)_0%,_rgba(157,78,166,1)_51%,_rgba(105,40,204,1)_100%)] transition-all duration-800 p-6 text-white text-center rounded-full
+      <button className='border-3 font-bold border-cyan-400 btn bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] hover:bg-[linear-gradient(-30deg,_rgba(30,5,36,1)_0%,_rgba(157,78,166,1)_51%,_rgba(105,40,204,1)_100%)] transition-all duration-800 p-6 text-white text-center rounded-full
       '>Hire Me</button>
     </div>
   </div>
