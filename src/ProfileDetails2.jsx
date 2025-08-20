@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const ProfileDetails2 = () => {
   return (
     <div className="relative font-extrabold  text-white min-h-screen p-6">
-    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-b from-[#3c005f] to-[#2a0045] z-1 top-0 left-0 ">
+    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
     
     </div>
 

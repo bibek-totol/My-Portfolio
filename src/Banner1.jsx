@@ -28,20 +28,20 @@ export default function Banner1() {
           <p className='text-cyan-400 mt-8 text-sm sm:text-base font-semibold'>Please Click on these buttons</p>
 
           <div className='flex flex-wrap gap-3 mt-4'>
-            <button className="border-2 border-cyan-400 btn bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] hover:bg-[linear-gradient(-30deg,_rgba(30,5,36,1)_0%,_rgba(157,78,166,1)_51%,_rgba(105,40,204,1)_100%)] text-white font-semibold px-5 py-2 rounded-full shadow-lg transition-all duration-300 ease-in-out">
-              <a href={BibekCV} download="Bibek CV(3.0).pdf" className="flex items-center gap-2 text-sm sm:text-base font-extrabold text-black">
+            <button className="border-3 border-cyan-400 btn bg-[linear-gradient(30deg,_rgba(105,40,204,1)_0%,_rgba(157,78,166,1)_51%,_rgba(30,5,36,1)_100%)] hover:bg-[linear-gradient(-30deg,_rgba(30,5,36,1)_0%,_rgba(157,78,166,1)_51%,_rgba(105,40,204,1)_100%)] text-white font-semibold px-5 py-2 rounded-full shadow-lg transition-all duration-300 ease-in-out">
+              <a href={BibekCV} download="Bibek CV(3.0).pdf" className="flex items-center gap-2 text-sm sm:text-base font-extrabold text-white">
                 <MdOutlineFileDownload className="text-xl" />
                 Download CV
               </a>
             </button>
 
             <a href='https://www.linkedin.com/in/bibekbhowmick/' target="_blank" rel="noopener noreferrer">
-              <button className='border-2 border-cyan-400 btn btn-outline text-[#8953F7] rounded-full p-3'>
+              <button className='border-3 border-cyan-400 btn btn-outline text-[#8953F7] rounded-full p-3'>
                 <FaLinkedinIn size={24} />
               </button>
             </a>
             <a href='https://github.com/bibek-totol' target="_blank" rel="noopener noreferrer">
-              <button className='border-2 border-cyan-400 btn btn-outline text-[#8953F7] rounded-full p-3'>
+              <button className='border-3 border-cyan-400 btn btn-outline text-[#8953F7] rounded-full p-3'>
                 <FaGithub size={24} />
               </button>
             </a>

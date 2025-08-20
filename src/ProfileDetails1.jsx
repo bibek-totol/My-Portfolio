@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const ProfileDetails1 = () => {
   return (
     <div className="relative font-extrabold  text-white min-h-screen p-6">
-    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-b from-[#3c005f] to-[#2a0045] z-1 top-0 left-0 ">
+    <div className="absolute w-full h-[1500px] md:h-[800px] lg:h-[1000px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
     
 
     
@@ -72,7 +72,7 @@ const ProfileDetails1 = () => {
 
       {/* Key Features */}
       <div className="mt-8">
-      <Suspense fallback={<div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>}>
+      <Suspense fallback={<div className="h-64  rounded-lg animate-pulse"></div>}>
               <img className="rounded-lg w-full" src={im1} alt="Project Screenshot"  />
             </Suspense>
         <h3 className="text-lg  mt-4">Key Features</h3>

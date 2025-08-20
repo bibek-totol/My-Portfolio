@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const ProfileDetails4 = () => {
   return (
     <div className="relative font-extrabold   text-white min-h-screen p-6">
-    <div className="absolute w-full h-[2200px] md:h-[900px] lg:h-[1300px] bg-gradient-to-b from-[#3c005f] to-[#2a0045] z-1 top-0 left-0 ">
+    <div className="absolute w-full h-[2200px] md:h-[900px] lg:h-[1300px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
     
     </div>
 

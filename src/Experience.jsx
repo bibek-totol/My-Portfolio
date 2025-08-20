@@ -24,19 +24,14 @@ export default function Experience() {
       desc: "Website and System Penetration Testing (ByteCapsuleIT)",
     },
     {
-      year: "2023–(Running)",
-      title: "Project Development",
-      desc: "Built around 20+ projects. Submitted in GitHub",
-    },
-    {
       year: "2022–24",
-      title: "General Member",
+      title: "Executive Member",
       desc: "BAUET COMPUTER SOCIETY",
     },
     {
       year: "2022–24",
-      title: "Participation in Programming Contest",
-      desc: "BAUET (Mindstrom 1.0, 2.0) and IT Spark (1.0)",
+      title: "Promotional Secretary",
+      desc: "BAUET Career Club",
     },
   ];
 
