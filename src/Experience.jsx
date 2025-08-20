@@ -5,7 +5,7 @@ import Card from "./Card";
 export default function Experience() {
   const experienceData = [
     {
-      year: "2022–23",
+      year: "2021–22",
       title: "Problem Solving",
       desc:
         "Leetcode, Codeforces, HackerRank, GeeksForGeeks, Coding Ninjas, PortSwigger Academy (250+) problems",
@@ -33,6 +33,8 @@ export default function Experience() {
       title: "Promotional Secretary",
       desc: "BAUET Career Club",
     },
+
+    
   ];
 
   const educationData = [
