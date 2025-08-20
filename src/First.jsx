@@ -10,32 +10,35 @@ import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Initialoader from "./Initialoader";
 
+
+let hasLoaded = false;
 function First() {
   const fadeInFromRight = {
     hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
   };
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!hasLoaded);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    if (!hasLoaded) {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        hasLoaded = true; 
+      }, 2000);
 
-    return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
+    } else {
+      setLoading(false);
+    }
   }, []);
+  
 
   return (
     <>
-      <AnimatePresence>
+       <AnimatePresence>
         {loading && (
-          <motion.div
-            key="loader"
-            initial={{ opacity: 1, x: 0 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -200, transition: { duration: 1 } }}
-          >
+          <motion.div key="loader">
             <Initialoader />
           </motion.div>
         )}
