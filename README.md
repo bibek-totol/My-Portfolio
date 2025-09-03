@@ -1,6 +1,9 @@
-# Apk file: https://drive.google.com/file/d/1PHXWDw6wb0hwwio3O9HSM4m7IOS4kgBC/view?usp=sharing
-# Portfolio App Link: https://appetize.io/app/b_7kcdg6ymlc2eoo5om5izoir564?device=pixel9xl&osVersion=15.0&toolbar=true
-# Portfolio Live Link: https://bibek-portfolio2.netlify.app/
+# Apk file: 
+https://drive.google.com/file/d/1PHXWDw6wb0hwwio3O9HSM4m7IOS4kgBC/view?usp=sharing
+# Portfolio App Link: 
+https://appetize.io/app/b_7kcdg6ymlc2eoo5om5izoir564?device=pixel9xl&osVersion=15.0&toolbar=true
+# Portfolio Live Link: 
+https://bibek-portfolio2.netlify.app/
 
 # Portfolio  UI
 ![Image](https://github.com/user-attachments/assets/b2b44c0c-8753-4b9c-947f-9e3cb643c57c)
