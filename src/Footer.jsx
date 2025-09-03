@@ -10,12 +10,7 @@ export default function Footer() {
      
       <footer className="footer footer-center   text-[#FFFFFF] rounded p-10 flex flex-col ">
       
-  <nav className="grid grid-flow-col gap-4  z-50">
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
+  
   <nav className='z-50'>
     <div className="grid grid-flow-col gap-4">
       <a>

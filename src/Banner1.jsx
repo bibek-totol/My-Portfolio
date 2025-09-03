@@ -3,7 +3,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import im2 from './assets/Screenshot_4-Photoroom.webp';
 import './App.css';
-import BibekCV from './assets/Bibek CV(3.0).pdf';
+import BibekCV from './assets/FullStack Developer CV(Bibek).pdf';
 
 
 export default function Banner1() {

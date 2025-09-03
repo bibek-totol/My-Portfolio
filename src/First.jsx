@@ -45,15 +45,16 @@ function First() {
       </AnimatePresence>
 
       {!loading && (
-        <div className="max-w-[1440px] mx-auto overflow-x-hidden overflow-y-clip bg-gradient-to-r from-[#004e92] to-[#000428] h-full">
+        <div className="max-w-[1440px] mx-auto overflow-x-hidden overflow-y-auto bg-gradient-to-r from-[#004e92] to-[#000428] min-h-screen">
           <Navbar />
           <Banner1 />
 
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             variants={fadeInFromRight}
+          
             id="services"
           >
             <QualityServices />
@@ -72,7 +73,7 @@ function First() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             variants={fadeInFromRight}
             id="education"
           >
@@ -82,9 +83,14 @@ function First() {
           <div id="skills">
             <SKills />
           </div>
-          <div id="contact">
+          <motion.div id="contact"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={fadeInFromRight}
+          >
             <ContactUs />
-          </div>
+          </motion.div>
 
           <Footer />
         </div>
