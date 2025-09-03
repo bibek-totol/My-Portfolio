@@ -6,13 +6,13 @@ import { Link } from "react-router";
 const ProfileDetails4 = () => {
   return (
     <div className="relative font-extrabold   text-white min-h-screen p-6">
-    <div className="absolute w-full h-[2200px] md:h-[900px] lg:h-[1300px] bg-gradient-to-r from-[#004e92] to-[#000428]  z-1 top-0 left-0 ">
+    <div className="absolute w-full min-h-full overflow-y-auto   z-1 top-0 left-0 ">
     
-    </div>
+ 
 
 
 
-    <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4  gap-4">
+    <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4 bg-gradient-to-r from-[#004e92] to-[#000428]   gap-4">
     <div>
       {/* Header */}
       <div className="flex items-center space-x-4">
@@ -107,6 +107,7 @@ o Communicate through integrated features. <br/>
       </div>
 
 
+    </div>
     </div>
     </div>
   );
