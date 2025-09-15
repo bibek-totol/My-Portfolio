@@ -1,15 +1,48 @@
-import React from 'react';
 
-export default function Initialoader() {
+
+
+import React from "react";
+import { motion } from "framer-motion";
+
+const InitialLoader = () => {
   return (
-    <div
-      className="h-screen flex justify-center items-center"
-      style={{
-        background: 'bg-gradient-to-r from-[#004e92] to-[#000428] ',
-      }}
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      className="fixed inset-0 flex flex-col items-center justify-center 
+                 bg-gradient-to-br from-[#080325] via-[#1a0f91] to-[#0af70d] 
+                 z-50"
     >
-     <span className="loading loading-infinity loading-xl w-[230px] md:w-[350px] lg:w-[400px]    h-[230px] md:h-[350px] lg:h-[400px] text-cyan-300"></span>
+      {/* Spinner */}
+      <motion.div
+        initial={{ rotate: 0 }}
+        animate={{ rotate: 360 }}
+        transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
+        className="w-20 h-20 border-4 border-white border-t-transparent rounded-full"
+      />
 
-    </div>
+      {/* Animated Text */}
+      <motion.h1
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="mt-6 text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wide text-center"
+      >
+        Loading your experience...
+      </motion.h1>
+
+      {/* Progress Bar */}
+      <motion.div
+        initial={{ width: "0%" }}
+        animate={{ width: "80%" }}
+        transition={{ duration: 2.5, ease: "easeInOut" }}
+        className="h-1 mt-6 bg-white/80 rounded-full overflow-hidden w-3/4 sm:w-1/2"
+      />
+    </motion.div>
   );
-}
+};
+
+export default InitialLoader;
+

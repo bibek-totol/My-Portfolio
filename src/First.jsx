@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 import Banner1 from "./Banner1";
@@ -9,9 +9,11 @@ import SKills from "./SKills";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Initialoader from "./Initialoader";
-
+import { useScroll, useTransform } from "motion/react";
+import { GoogleGeminiEffect } from "./components/ui/google-gemini-effect";
 
 let hasLoaded = false;
+
 function First() {
   const fadeInFromRight = {
     hidden: { opacity: 0, x: 100 },
@@ -24,19 +26,36 @@ function First() {
     if (!hasLoaded) {
       const timer = setTimeout(() => {
         setLoading(false);
-        hasLoaded = true; 
-      }, 2000);
+        hasLoaded = true;
+      }, 2500);
 
       return () => clearTimeout(timer);
     } else {
       setLoading(false);
     }
   }, []);
+
   
+  const geminiRef = useRef(null);
+
+  const { scrollYProgress } = useScroll(
+    geminiRef.current
+      ? {
+          target: geminiRef,
+          offset: ["start start", "end start"],
+        }
+      : {}
+  );
+
+  const pathLengthFirst = useTransform(scrollYProgress ?? 0, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress ?? 0, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress ?? 0, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress ?? 0, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress ?? 0, [0, 0.8], [0, 1.2]);
 
   return (
     <>
-       <AnimatePresence>
+      <AnimatePresence>
         {loading && (
           <motion.div key="loader">
             <Initialoader />
@@ -54,7 +73,6 @@ function First() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
             variants={fadeInFromRight}
-          
             id="services"
           >
             <QualityServices />
@@ -80,10 +98,31 @@ function First() {
             <Experience />
           </motion.div>
 
+         
+          <div
+            ref={geminiRef}
+            className="relative  h-[300px] md:h-[500px] lg:h-[600px] overflow-clip bg-gradient-to-r from-[#004e92] to-[#000428]"
+          >
+           
+           <div className="sticky top-0 ">
+    <GoogleGeminiEffect
+      pathLengths={[
+        pathLengthFirst,
+        pathLengthSecond,
+        pathLengthThird,
+        pathLengthFourth,
+        pathLengthFifth,
+      ]}
+    />
+  </div>
+  
+          </div>
+
           <div id="skills">
             <SKills />
           </div>
-          <motion.div id="contact"
+          <motion.div
+            id="contact"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
