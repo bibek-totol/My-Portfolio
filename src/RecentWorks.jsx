@@ -5,6 +5,8 @@ import im1 from "./assets/Screenshot_58.webp";
 import im2 from "./assets/Screenshot_14.webp";
 import im3 from "./assets/Screenshot_75.webp";
 import im4 from "./assets/Screenshot_2.webp";
+import im5 from "./assets/Screenshot_2.jpg";
+import im6 from "./assets/Screenshot_4.jpg"
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { PinContainer } from "./components/ui/3d-pin";
@@ -13,8 +15,8 @@ const ProjectCard = ({ img, link, desc, to }) => (
   <PinContainer
     title={link}
     href={link}
-    
-   
+
+
   >
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -45,9 +47,9 @@ const ProjectCard = ({ img, link, desc, to }) => (
         <div className="flex justify-end">
           <Link to={to}>
             <button
-              className="px-4 border border-cyan-400 py-2 rounded-xl 
+              className="cursor-pointer px-4 border border-cyan-400 py-2 rounded-xl 
                                bg-gradient-to-r from-[#9463F8] to-[#7d4edc] 
-                               text-black font-extrabold text-sm sm:text-base 
+                               hover:scale-110 text-black font-extrabold text-sm sm:text-base 
                                hover:brightness-110 transition"
             >
               View Details
@@ -58,6 +60,8 @@ const ProjectCard = ({ img, link, desc, to }) => (
     </motion.div>
   </PinContainer>
 );
+
+
 
 export default function RecentWorks() {
   const mernProjects = [
@@ -71,30 +75,46 @@ export default function RecentWorks() {
 
     {
       id: 2,
-      img: im2,
-      link: "https://tech-tales2025.netlify.app/",
-      desc: "Tech-Tales is a feature-rich blogging app with comments, calendar, and wishlist integration to enhance writing experiences.",
-      to: "/details3",
+      img: im6,
+      link: "#",
+      desc: "Ride Booking Nexus is a full-stack application that allows users to book rides and manage their bookings(Rider, Driver and Admin) Roles",
+      to: "/details6",
     },
 
     {
       id: 3,
       img: im3,
-      link: "https://unruly-destruction.surge.sh/",
-      desc: "GameCritics-Hub2 is a game review platform with user ratings, recommendations, and real-time news & updates for gamers.",
-      to: "/details2",
-    }
-    
+      link: "https://tech-tales2025.netlify.app/",
+      desc: "Tech-Tales is a feature-rich blogging app with comments, calendar, and wishlist integration to enhance writing experiences.",
+      to: "/details3",
+    },
+    // {
+    //   id: 4,
+    //   img: im3,
+    //   link: "https://unruly-destruction.surge.sh/",
+    //   desc: "GameCritics-Hub2 is a game review platform with user ratings, recommendations, and real-time news & updates for gamers.",
+    //   to: "/details2",
+    // }
+
   ];
 
   const nextProjects = [
+
     {
       id: 1,
+      img: im5,
+      link: "https://ai-job-assistant-five.vercel.app/",
+      desc: "AI Job Assistant is a smart career platform offering AI resume checking, job matching, interview scheduling, and more.",
+      to: "/details5",
+    },
+    {
+      id: 2,
       img: im4,
       link: "https://schedule-processing-next-js.vercel.app/",
       desc: "Schedule Processing is a web application used for managing and scheduling events and tasks with secure role-based access and notifications.",
       to: "/details4",
     },
+    
   ];
 
   return (

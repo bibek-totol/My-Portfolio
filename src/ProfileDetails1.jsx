@@ -1,7 +1,18 @@
+
 import React,{Suspense} from "react";
 import im1 from './assets/Screenshot_58.webp'
+import im2 from './assets/Screenshot_59.jpg'
+import im3 from './assets/Screenshot_60.jpg'
+import im4 from './assets/Screenshot_61.jpg'
+import im5 from './assets/Screenshot_62.jpg'
 import './App.css'
 import { Link } from "react-router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay,Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
 const ProfileDetails1 = () => {
@@ -9,21 +20,17 @@ const ProfileDetails1 = () => {
     <div className="relative font-extrabold  text-white min-h-screen p-6">
     <div className="absolute w-full min-h-full overflow-y-auto   z-1 top-0 left-0 ">
     
-
-    
-    </div>
-
-
-    <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4 gap-4 bg-gradient-to-r from-[#004e92] to-[#000428] ">
+  
 
 
 
+    <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4 bg-gradient-to-r from-[#004e92] to-[#000428]   gap-4">
 
     <div>
       {/* Header */}
       <div className="flex items-center space-x-4">
-        <Link to="/"><button className="bg-gray-800 px-4 py-2 rounded-lg">🔙 Back</button></Link>
-        <span className="text-gray-400">Projects &gt; IEMS: Collaborative Study Platform</span>
+        <Link to="/"><button className="cursor-pointer bg-gray-800 px-4 py-2 rounded-lg">🔙 Back</button></Link>
+         <span className="text-gray-400">Projects &gt; IEMS: Collaborative Study Platform</span>
       </div>
 
       {/* Hero Section */}
@@ -31,7 +38,7 @@ const ProfileDetails1 = () => {
         <h1 className="text-4xl font-bold text-white">
         IEMS: Collaborative <span className="text-purple-400">Study Platform </span>
         </h1>
-        
+       
       </div>
 
       {/* Stats Section */}
@@ -46,7 +53,7 @@ const ProfileDetails1 = () => {
         </div>
       </div>
 
-      {/* CTA Buttons */}
+       {/* CTA Buttons */}
       <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-2 gap-4">
         <a href="https://bibek-iems-portal.netlify.app/" className="bg-blue-600 px-6 py-2 rounded-lg mr-4">Live Demo</a>
         <a href="https://github.com/bibek-totol/IEMS-Client" className="bg-purple-600 px-6 py-2 rounded-lg ">GitHub(Client)</a>
@@ -72,13 +79,44 @@ const ProfileDetails1 = () => {
 
       {/* Key Features */}
       <div className="mt-8">
-      <Suspense fallback={<div className="h-64  rounded-lg animate-pulse"></div>}>
-              <img className="rounded-lg w-full" src={im1} alt="Project Screenshot"  />
-            </Suspense>
+     <Suspense
+  fallback={
+    <div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>
+  }
+>
+  <Swiper
+    modules={[Pagination, Autoplay,Navigation]}
+    spaceBetween={20}
+    slidesPerView={1}
+    pagination={{ clickable: true }}
+    navigation={true}
+     scrollbar={{ draggable: true }}
+    autoplay={{
+      delay: 2000,
+      disableOnInteraction: false,
+    }}
+    loop={true}
+    className="rounded-lg"
+  >
+    {[im1, im2, im3, im4,im5].map((img, index) => (
+      <SwiperSlide key={index}>
+        <img
+          src={img}
+          alt={`Project Screenshot ${index + 1}`}
+          className="rounded-lg w-full h-64 object-cover"
+        />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</Suspense>
+
         <h3 className="text-lg  mt-4">Key Features</h3>
         <ul className="mt-2 space-y-2">
 
+    
 
+
+          
           <li className="pookie3 p-3 rounded-lg">🔹  User Authentication & Social Login</li>
           <li className="pookie3 p-3 rounded-lg">🔹 Role-Based Access Control (RBAC)</li>
           <li className="pookie3 p-3 rounded-lg">🔹 Student Dashboard</li>
@@ -87,6 +125,7 @@ const ProfileDetails1 = () => {
           <li className="pookie3 p-3 rounded-lg">🔹 Review and Rating System</li>
           <li className="pookie3 p-3 rounded-lg">🔹 Announcements Feature</li>
           <li className="pookie3 p-3 rounded-lg">🔹 Pagination and Search</li>
+         
         </ul>
       </div>
       </div>
@@ -94,7 +133,10 @@ const ProfileDetails1 = () => {
 
     </div>
     </div>
+    </div>
+
   );
 };
 
 export default ProfileDetails1;
+

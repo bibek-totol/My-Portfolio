@@ -64,7 +64,7 @@ const ContactUs = () => {
       <div className=" flex justify-center items-center text-white px-4 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-2 rounded-lg max-w-6xl w-full">
           
-          <div className="bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-4 md:p-8 rounded-lg">
+          <div className="bg-white/10 backdrop-blur-md border border-white/10 shadow-xl p-4 md:p-8 rounded-3xl">
             <h2 className="text-4xl font-bold text-purple-400">Let’s work together!</h2>
             <p className="text-gray-400 mt-2">
               I design and code beautifully simple things, and I love what I do.
