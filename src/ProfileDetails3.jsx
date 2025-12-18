@@ -90,7 +90,7 @@ const ProfileDetails3 = () => {
                   pagination={{ clickable: true }}
                   navigation={true}
                   autoplay={{
-                    delay: 2000,
+                    delay: 1500,
                     disableOnInteraction: false,
                   }}
                   loop={true}

@@ -92,7 +92,7 @@ const ProfileDetails1 = () => {
     navigation={true}
      scrollbar={{ draggable: true }}
     autoplay={{
-      delay: 2000,
+      delay: 1500,
       disableOnInteraction: false,
     }}
     loop={true}
