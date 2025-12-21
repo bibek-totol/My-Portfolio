@@ -23,7 +23,7 @@ const ProjectCard = ({ img, link, desc, to }) => (
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}
       whileHover={{ scale: 1.02 }}
-      className="w-[270px] md:w-[500px] lg:w-[500px] h-full flex flex-col bg-[#02284f]  
+      className="w-[270px] md:w-[500px] lg:w-[500px] h-full flex flex-col bg-[#141935] 
                  border-[#002851] shadow-xl hover:shadow-purple-500/40 
                  transition-all duration-300 rounded-2xl overflow-hidden p-5"
     >
@@ -114,11 +114,11 @@ export default function RecentWorks() {
       desc: "Schedule Processing is a web application used for managing and scheduling events and tasks with secure role-based access and notifications.",
       to: "/details4",
     },
-    
+
   ];
 
   return (
-    <section className="mt-16 rounded-4xl  bg-gradient-to-r from-[#004e92] to-[#000428] py-20 px-6 sm:px-10 lg:px-24">
+    <section className="mt-16 rounded-4xl py-20 px-6 sm:px-10 lg:px-24">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#B694FA]">
           My Recent <span className="text-[#9463F8]">Works</span>
@@ -129,7 +129,7 @@ export default function RecentWorks() {
         </p>
       </div>
 
-      <Tabs>
+      <Tabs selectedTabClassName="bg-[#9463F8]/10 !text-white/50 shadow-lg shadow-[#9463F8]/50">
         <TabList className="flex flex-wrap justify-center gap-4 text-sm sm:text-base lg:text-lg mt-12 mb-6 bg-black/30 rounded-full p-3 font-semibold text-white">
           <Tab className="px-4 py-2 rounded-full cursor-pointer hover:bg-[#9463F8]/20 focus:outline-none focus:bg-[#9463F8]/30">
             MERN Stack Projects

@@ -10,6 +10,7 @@ import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Initialoader from "./Initialoader";
 import { GoogleGeminiEffect } from "./components/ui/google-gemini-effect";
+import AnimatedBackground from "./AnimatedBackground";
 
 let hasLoaded = false;
 
@@ -64,71 +65,74 @@ function MainContent() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
 
   return (
-    <div className="max-w-[1440px] mx-auto overflow-x-hidden overflow-y-auto bg-gradient-to-r from-[#004e92] to-[#000428] min-h-screen">
-      <Navbar />
-      <Banner1 />
+    <div className="relative max-w-[1440px] mx-auto overflow-x-hidden overflow-y-auto min-h-screen">
+      <AnimatedBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <Banner1 />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={fadeInFromRight}
-        id="services"
-      >
-        <QualityServices />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeInFromRight}
+          id="services"
+        >
+          <QualityServices />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.1 }}
-        variants={fadeInFromRight}
-        id="works"
-      >
-        <RecentWorks />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.1 }}
+          variants={fadeInFromRight}
+          id="works"
+        >
+          <RecentWorks />
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={fadeInFromRight}
-        id="education"
-      >
-        <Experience />
-      </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeInFromRight}
+          id="education"
+        >
+          <Experience />
+        </motion.div>
 
-      <div
-        ref={geminiRef}
-        className="relative h-[300px] md:h-[500px] lg:h-[600px] overflow-clip bg-gradient-to-r from-[#004e92] to-[#000428]"
-      >
-        <div className="sticky top-0">
-          <GoogleGeminiEffect
-            pathLengths={[
-              pathLengthFirst,
-              pathLengthSecond,
-              pathLengthThird,
-              pathLengthFourth,
-              pathLengthFifth,
-            ]}
-          />
+        <div
+          ref={geminiRef}
+          className="relative h-[300px] md:h-[500px] lg:h-[600px] overflow-clip"
+        >
+          <div className="sticky top-0">
+            <GoogleGeminiEffect
+              pathLengths={[
+                pathLengthFirst,
+                pathLengthSecond,
+                pathLengthThird,
+                pathLengthFourth,
+                pathLengthFifth,
+              ]}
+            />
+          </div>
         </div>
-      </div>
 
-      <div id="skills">
-        <SKills />
-      </div>
-      <motion.div
-        id="contact"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={fadeInFromRight}
-      >
-        <ContactUs />
-      </motion.div>
+        <div id="skills">
+          <SKills />
+        </div>
+        <motion.div
+          id="contact"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeInFromRight}
+        >
+          <ContactUs />
+        </motion.div>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

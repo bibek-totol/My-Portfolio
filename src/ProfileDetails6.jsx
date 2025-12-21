@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import im1 from './assets/Screenshot_4.jpg'
 import './App.css'
+import AnimatedBackground from './AnimatedBackground';
 import { Link } from "react-router";
 
 
@@ -34,9 +35,10 @@ import "swiper/css/navigation";
 const ProfileDetails6 = () => {
     return (
         <div className="relative font-extrabold text-white min-h-screen p-6">
+            <AnimatedBackground />
             <div className="absolute w-full min-h-full overflow-y-auto z-1 top-0 left-0">
 
-                <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4 bg-gradient-to-r from-[#004e92] to-[#000428] gap-4">
+                <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2 p-4  gap-4">
 
                     {/* LEFT SECTION */}
                     <div>
@@ -77,7 +79,7 @@ const ProfileDetails6 = () => {
                         {/* CTA Buttons */}
                         <div className="mt-6 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-2 gap-4">
                             <a href="https://github.com/bibek-totol/ride-booking-nexus-frontend-" className="bg-blue-600 px-6 py-2 rounded-lg">
-                                 GitHub Client
+                                GitHub Client
                             </a>
                             <a href="https://github.com/bibek-totol/backend-ride-booking-api" className="bg-purple-600 px-6 py-2 rounded-lg">
                                 GitHub Server
@@ -103,7 +105,7 @@ const ProfileDetails6 = () => {
                                     "Postman API Testing",
                                     "Stripe",
                                     "Third Party API",
-    
+
                                 ].map((tech) => (
                                     <span
                                         key={tech}
@@ -119,35 +121,35 @@ const ProfileDetails6 = () => {
                     {/* RIGHT SECTION */}
                     <div>
                         <div className="mt-8">
-                              <Suspense
-                                            fallback={
-                                              <div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>
-                                            }
-                                          >
-                                            <Swiper
-                                              modules={[Pagination, Autoplay, Navigation]}
-                                              spaceBetween={20}
-                                              slidesPerView={1}
-                                              pagination={{ clickable: true }}
-                                              navigation={true}
-                                              autoplay={{
-                                                delay: 1500,
-                                                disableOnInteraction: false,
-                                              }}
-                                              loop={true}
-                                              className="rounded-lg"
-                                            >
-                                              {[im1, im2, im3, im4, im5, im6, im7, im8, im9, im10, im11, im12, im13, im14,im15,im16,im17].map((img, index) => (
-                                                <SwiperSlide key={index}>
-                                                  <img
-                                                    src={img}
-                                                    alt={`Project Screenshot ${index + 1}`}
-                                                    className="rounded-lg w-full h-64 object-cover"
-                                                  />
-                                                </SwiperSlide>
-                                              ))}
-                                            </Swiper>
-                                          </Suspense>
+                            <Suspense
+                                fallback={
+                                    <div className="h-64 bg-gray-700 rounded-lg animate-pulse"></div>
+                                }
+                            >
+                                <Swiper
+                                    modules={[Pagination, Autoplay, Navigation]}
+                                    spaceBetween={20}
+                                    slidesPerView={1}
+                                    pagination={{ clickable: true }}
+                                    navigation={true}
+                                    autoplay={{
+                                        delay: 1500,
+                                        disableOnInteraction: false,
+                                    }}
+                                    loop={true}
+                                    className="rounded-lg"
+                                >
+                                    {[im1, im2, im3, im4, im5, im6, im7, im8, im9, im10, im11, im12, im13, im14, im15, im16, im17].map((img, index) => (
+                                        <SwiperSlide key={index}>
+                                            <img
+                                                src={img}
+                                                alt={`Project Screenshot ${index + 1}`}
+                                                className="rounded-lg w-full h-64 object-cover"
+                                            />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                            </Suspense>
 
                             <h3 className="text-lg mt-2">Key Features</h3>
 
