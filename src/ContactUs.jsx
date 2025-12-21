@@ -90,7 +90,7 @@ const ContactUs = () => {
 
               <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required className="w-full p-3 bg-black/50 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500 h-32"></textarea>
 
-              <button type="submit" className="bg-gradient-to-r from-purple-500 to-purple-700 text-white py-3 px-6 rounded-lg font-bold hover:opacity-80 transition duration-300 w-full">
+              <button type="submit" className="cursor-pointer bg-gradient-to-r from-purple-500 to-purple-700 text-white py-3 px-6 rounded-lg font-bold hover:opacity-80 transition duration-300 w-full">
                 Send Message
               </button>
 

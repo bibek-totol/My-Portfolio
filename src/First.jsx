@@ -22,7 +22,7 @@ function First() {
       const timer = setTimeout(() => {
         setLoading(false);
         hasLoaded = true;
-      }, 2500);
+      }, 2000);
 
       return () => clearTimeout(timer);
     } else {
